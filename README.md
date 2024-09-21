@@ -7,7 +7,7 @@ This is a simple script that talks to rigctld to load in memories to an Icom 706
 - Install hamlib and then run the rigctld like:
 
 ```
-$ rigctld -m 3009 -r /dev/ttyUSB0 -s 9600 --set-conf=poll_interval=0,cache_timeout=0
+rigctld -m 3009 -r /dev/ttyUSB0 -s 9600 --set-conf=poll_interval=0,cache_timeout=0
 ```
 
 - Install or make sure you have Python 3.8 or later.
