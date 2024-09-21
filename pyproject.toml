@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "icom-706-prog"
+version = "0.0.1"
+authors = [
+  { name="Alan Garfield", email="alan@fromorbit.com" },
+]
+description = "A tool to help program memories in a Icom 706"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "click",
+    "pandas",
+]
+
+[project.scripts]
+icom = "main:main"
+
